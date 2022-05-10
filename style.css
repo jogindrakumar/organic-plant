@@ -14,39 +14,57 @@
     text-decoration: none;
     font-size: 1.2rem;
     text-transform: capitalize;
+    color: grey;
+}
+
+.navigation a:hover {
+    color: #28C76F;
 }
 
 .navigation .order-now {
     border: 1px solid green;
     color: white;
     background: #28C76F;
-    border-radius: 10px;
-    padding: 5px 20px;
+    border-radius: 8px;
+    padding: 10px 20px;
+}
+
+.navigation .order-now:hover {
+    color: white;
 }
 
 .banner {
-    margin-top: 100px;
-    padding-left: 100px;
+    margin-top: 80px;
+    margin-left: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
-.banner .info-section h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
+.banner .info-section {
+    padding: 10px;
+    align-items: center;
 }
 
-.banner .info-section h2 {
-    margin-top: 20px;
-    font-size: 4rem;
+.banner .info-section h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    width: 500px;
+}
+
+.info-section h1 span {
+    position: relative;
+    margin-top: -10px;
+    font-size: 5rem;
     text-transform: uppercase;
     color: #28C76F;
     font-weight: 700;
 }
 
 .banner .info-section p {
-    margin-top: 50px;
+    margin-top: 40px;
     color: gainsboro;
+    padding: 20px;
+    width: 500px;
 }
 
 .banner .info-section h5 {
@@ -55,7 +73,8 @@
 }
 
 .banner .info-section .button-section {
-    margin-top: 50px;
+    width: 500px;
+    margin-top: 40px;
 }
 
 .banner .info-section .button-section button {
@@ -66,12 +85,14 @@
     padding: 10px 20px;
     text-transform: capitalize;
     font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
 .banner .info-section .button-section a {
     text-decoration: none;
     font-size: 1.2rem;
     color: grey;
+    text-transform: capitalize;
 }
 
 .banner .info-section .button-section .far {
@@ -86,6 +107,77 @@
 }
 
 .banner .banner-img img {
+    margin-left: 200px;
     height: 550px;
     width: 550px;
+}
+
+.choice-plant {
+    margin-top: 50px;
+    align-items: center;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.choice-plant h1 {
+    font-size: 2.5rem;
+}
+
+.choice-plant p {
+    color: grey;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.plant-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    align-items: center;
+    text-align: center;
+    gap: 60px;
+    padding: 60px;
+}
+
+.plant-section .box {
+    width: 180px;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+
+.plant-section .box img {
+    height: 150px;
+    width: 150px;
+}
+
+.plant-section .box h5 {
+    margin-top: 5px;
+    font-weight: 600;
+    font-style: bold;
+    font-size: 1.2rem;
+}
+
+.plant-section .box .fas {
+    margin-top: 2px;
+    color: orange;
+}
+
+.plant-section .box .far {
+    color: grey;
+}
+
+.plant-section .box p {
+    margin-top: 10px;
+}
+
+.plant-section .box button {
+    margin-top: 10px;
+    background: green;
+    padding: 6px;
+    color: white;
+    border-radius: 10px;
+    text-transform: uppercase;
+    border: 1px solid green;
 }
